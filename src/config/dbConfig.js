@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+
 import { DEV_DB_URL, NODE_ENV, PROD_DB_URL } from './serverConfig.js';
 
 export default async function connectDB() {
