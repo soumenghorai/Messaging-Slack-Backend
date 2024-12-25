@@ -1,6 +1,6 @@
 import { StatusCodes } from 'http-status-codes';
 
-class validationError extends Error {
+class ValidationError extends Error {
   constructor(errorDetails, message) {
     super(message);
     this.name = 'ValidationError';
@@ -14,4 +14,4 @@ class validationError extends Error {
   }
 }
 
-export default validationError;
+export default ValidationError;
