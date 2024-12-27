@@ -1,11 +1,11 @@
+import { StatusCodes } from 'http-status-codes';
 import { v4 as uuidv4 } from 'uuid';
 
-import workspaceRepository from '../repositories/workspaceRepository.js';
-import ValidationError from '../utils/errors/validationError.js';
-import { StatusCodes } from 'http-status-codes';
-import ClientError from '../utils/errors/clientError.js';
 import channelRepository from '../repositories/channelRepository.js';
 import userRepository from '../repositories/userRepository.js';
+import workspaceRepository from '../repositories/workspaceRepository.js';
+import ClientError from '../utils/errors/clientError.js';
+import ValidationError from '../utils/errors/validationError.js';
 
 const isUserAdminOfWorkspace = (workspace, userId) => {
   console.log(workspace.members, userId);
